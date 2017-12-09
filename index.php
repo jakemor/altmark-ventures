@@ -1,5 +1,18 @@
+<?php 
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$page = 'home';
+
+if (!empty($_GET["p"])) {
+	$page = $_GET["p"];
+}
+
+?>
+
 <!DOCTYPE html>
-<!-- saved from url=(0050)https://v4-alpha.getbootstrap.com/examples/cover/# -->
 <html lang="en">
 
 <head>
@@ -8,7 +21,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Altmark Ventures</title>
+	<title>Altmark Ventures | Focused exclusively on Blockchain Tech, Algorithmic Trading & More</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="./static/css/bootstrap.min.css" rel="stylesheet">
@@ -36,10 +49,10 @@
 			min-height: 100%;
 			padding-bottom: 50px;
 			background: black; /* For browsers that do not support gradients */
-			background: -webkit-linear-gradient(black, #191919); /* For Safari 5.1 to 6.0 */
-			background: -o-linear-gradient(black, #191919); /* For Opera 11.1 to 12.0 */
-			background: -moz-linear-gradient(black, #191919); /* For Firefox 3.6 to 15 */
-			background: linear-gradient(black, #191919); /* Standard syntax */
+			background: -webkit-linear-gradient(black, #232323); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(black, #232323); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(black, #232323); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(black, #232323); /* Standard syntax */
 			background-repeat: -webkit-no-repeat;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
@@ -65,11 +78,18 @@
 			color: white;
 			text-transform: uppercase;
 			font-weight: 400;
-			font-size: 0.85rem;
+			font-size: 0.8rem;
+			opacity: 0.7;
+			letter-spacing: 0.2rem;
 		}
 
 		div.navbar > ul > li > a.selected {
 			font-weight: 600;
+			opacity: 1.0;
+		}
+
+		div.navbar > ul > li > a:hover {
+			color: #7AB0FD;
 		}
 
 		/* content */
@@ -81,26 +101,29 @@
 			margin-right: auto;
 			text-align: center;
 			color: white;
-			margin-bottom: 145px;
-			margin-top: 5rem;
+			/*margin-bottom: 145px;*/
+			margin-top: 3rem;
 
+		}
+
+		div.center-vertical {
+			width: 90%;
+			max-width: 1200px;
+			color: white;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		div.blurb {
 			max-width: 450px;
 			width: 90%;
+			padding-top: 3rem;
 			margin-left: auto;
 			margin-right: auto;
-			padding-top: 3rem;
 		}
 
-		div.contact-blurb {
-			margin-top: 6rem;
-			text-align: left;
-			font-size: 0.75rem;
-			letter-spacing: 0.12rem;
-			line-height: 1.5rem;
-		}
+
 
 		a.contact-us, a.contact-us:visited, a.contact-us:active {
 			color: white;
@@ -144,10 +167,6 @@
 				margin-bottom: 100px;
 			}
 
-
-			div.contact-blurb {
-				text-align: center;
-			}
 		}
 		
 
@@ -155,11 +174,99 @@
 			font-size: 0.8rem;
 		}
 
+		h1.page-title {
+			letter-spacing: 10px;
+			font-size: 1.95rem;
+			margin-bottom: 4rem;
+			font-weight: 700;
+			line-height: 3.5rem;
+			text-align: center;
+		}
+
+		img.hero {
+			width: 100%;
+			max-width: 500px;
+			margin-top: 3rem;
+		}
+
+		div.our-focus {
+			width: 100%;
+			max-width: 800px;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 0.8rem;
+			opacity: 0.9;
+			letter-spacing: 0.13rem;
+		}
 
 
+		/* FORM */
 
+		form.form {
+			width: 100%;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 3rem 0;
+		} 
 
-	
+		div.form-col {
+			text-align: left !important;
+		}
+
+		label.form-label {
+			text-align: left !important;
+			width: 100%;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 0.8rem;
+		}
+
+		.form-control, .form-control:focus {
+			background-color: #4C4C4C;
+			color: white;
+			margin-bottom: 1rem;
+		}
+
+		.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: rgba(255,255,255,0.45);
+		}
+		.form-control::-moz-placeholder { /* Firefox 19+ */
+			color: rgba(255,255,255,0.45);
+		}
+		.form-control:-ms-input-placeholder { /* IE 10+ */
+			color: rgba(255,255,255,0.45);
+		}
+		.form-control:-moz-placeholder { /* Firefox 18- */
+			color: rgba(255,255,255,0.45);
+		}
+
+		button.btn-default {
+			width: 100%;
+			max-width: 300px; 
+			margin-left: auto; 
+			margin-right: auto;
+			border-radius: 100px;
+			height: 54px;
+			background-color: rgba(0,0,0,0);
+			border: 2px white solid;
+			color: white;
+			text-transform: uppercase;
+			font-size: 1.1rem;
+			letter-spacing: 3px;
+			font-weight: 300;
+			margin-top: 3rem;
+		}
+
+		.uploadcare--widget__button_type_open {
+			background-color: #4C4C4C;
+			width: 100% !important;
+		}
+		
+		.uploadcare--widget {
+			width: 100% !important;
+		}
+
 	</style>
 
 </head>
@@ -170,30 +277,20 @@
 		<br>
 		<div class="navbar"> 
 			<ul>
-				<li><a class="nav-link selected" href="#">Home</a></li>
-				<li><a class="nav-link" href="#">Got an Idea?</a></li>
-				<li><a class="nav-link" href="#">Our Focus</a></li>
-				<li><a class="nav-link" href="#">Contact Us</a></li>
+				<li><a class="nav-link <?php echo ($page == 'home') ? 'selected' : '' ?>" href="/">Home</a></li>
+				<li><a class="nav-link <?php echo ($page == 'got_an_idea') ? 'selected' : '' ?>" href="?p=got_an_idea">Got an Idea?</a></li>
+				<li><a class="nav-link <?php echo ($page == 'our_focus') ? 'selected' : '' ?>" href="?p=our_focus">Our Focus</a></li>
+				<li><a class="nav-link <?php echo ($page == 'contact_us') ? 'selected' : '' ?>" href="?p=contact_us">Contact Us</a></li>
 			</ul>
 		</div>
 
-		<div class="content">
-			<img src="/static/img/logo.svg">
-			<br><br>
-			<div class="blurb">
-				<p><strong>ALTMARK VENTURES</strong>, <span style="opacity: 0.8;">founded in 2017, is a Private Investment fund focused exclusively on Blockchain tech, Algorithmic Trading, Human Trading, Mining, and various crypto assets.</span></p>
-			</div>
+		
 
-			<div class="contact-blurb">
-				<br>
-				<p>
-					<span style="opacity: 0.8;">NOW HIRING: <a class="contact-us" href='#'>CONTACT US</a></span> <br>
-					<span style="opacity: 0.8;">WANT TO TALK?: <a class="contact-us" href='#'>CONTACT US</a></span>
-				</p>
+		<?php 
+			require_once($page . ".php");
+		?>
 
-			</div>
-
-		</div>
+		
 
 	</div>
 	<!-- Bootstrap core JavaScript
