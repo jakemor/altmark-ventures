@@ -5,7 +5,7 @@
 		<p>OUR TEAM LOVES NOTHING MORE THAN HEARING NEW IDEAS, AND TURNING THEM INTO REALITY! WE’D LOVE TO HEAR YOUR IDEA!</p>
 	</div>
 
-	<form class="form" action="https://formspree.io/jakemny@gmail.com" method="POST">
+	<form class="form" action="https://formspree.io/yair@altmarkgroup.com" method="POST">
 	<div class="form-group row">
 		
 		<div class="col-md-4" class="form-col">
