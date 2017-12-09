@@ -52,8 +52,8 @@ div.contact-blurb {
 	<div class="contact-blurb">
 		<br>
 		<p>
-			<span style="opacity: 0.8;">NOW HIRING: <a class="contact-us" href='#'>CONTACT US</a></span> <br>
-			<span style="opacity: 0.8;">WANT TO TALK?: <a class="contact-us" href='#'>CONTACT US</a></span>
+			<span style="opacity: 0.8;">NOW HIRING: <a class="contact-us" href='?p=contact_us'>CONTACT US</a></span> <br>
+			<span style="opacity: 0.8;">WANT TO TALK?: <a class="contact-us" href='?p=contact_us'>CONTACT US</a></span>
 		</p>
 
 	</div>
