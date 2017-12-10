@@ -177,7 +177,7 @@ if (!empty($_GET["p"])) {
 
 		h1.page-title {
 			letter-spacing: 10px;
-			font-size: 1.95rem;
+			font-size: 1.68rem;
 			margin-bottom: 4rem;
 			font-weight: 700;
 			line-height: 3.5rem;
@@ -279,9 +279,9 @@ if (!empty($_GET["p"])) {
 		<div class="navbar"> 
 			<ul>
 				<li><a class="nav-link <?php echo ($page == 'home') ? 'selected' : '' ?>" href="/">Home</a></li>
-				<li><a class="nav-link <?php echo ($page == 'got_an_idea') ? 'selected' : '' ?>" href="?p=got_an_idea">Got an Idea?</a></li>
-				<li><a class="nav-link <?php echo ($page == 'our_focus') ? 'selected' : '' ?>" href="?p=our_focus">Our Focus</a></li>
-				<li><a class="nav-link <?php echo ($page == 'contact_us') ? 'selected' : '' ?>" href="?p=contact_us">Contact Us</a></li>
+				<li><a class="nav-link <?php echo ($page == 'gotanidea') ? 'selected' : '' ?>" href="/GotAnIdea">Got an Idea?</a></li>
+				<li><a class="nav-link <?php echo ($page == 'ourfocus') ? 'selected' : '' ?>" href="/OurFocus">Our Focus</a></li>
+				<li><a class="nav-link <?php echo ($page == 'contactus') ? 'selected' : '' ?>" href="/ContactUs">Contact Us</a></li>
 			</ul>
 		</div>
 
