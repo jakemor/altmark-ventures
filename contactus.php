@@ -6,7 +6,7 @@
 		<p>WE’RE ALWAYS HAPPY TO HEAR FROM YOU! GET IN TOUCH WITH US AND WE’LL BE SURE TO GET BACK TO YOU AS SOON AS WE CAN!</p>
 	</div>
 
-	<form class="form" action="http://formspree.io/yair@altmarkgroup.com" method="POST">
+	<form class="form" action="http://formspree.io/Yair@AltmarkVentures.com" method="POST">
 		<div class="form-group row">
 			
 			<div class="col-md-4" class="form-col">
