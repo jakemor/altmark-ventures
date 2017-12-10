@@ -10,6 +10,8 @@ if (!empty($_GET["p"])) {
 	$page = $_GET["p"];
 }
 
+$page = strtolower($page);
+
 ?>
 
 <!DOCTYPE html>
